@@ -1,0 +1,42 @@
+.picture {
+    width: 300px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  
+  .picture:hover {
+    filter: brightness(50%);
+  }
+  
+  .picture-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 12px;
+  }
+
+  .header:grow{
+      transition: all .2s ease-in-out;
+  }
+  .header:hover {
+        transform: scale(1.5);
+  }
+  
+  body {
+    text-align: center;
+    background-color: rgb(1, 63, 105);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  
+  .page-container {
+    width: 80%;
+    margin-top: 5rem;
+    margin: auto;
+  }
+

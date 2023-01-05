@@ -1,0 +1,12 @@
+html,
+body {
+  background-color: rgb(212, 244, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+  color: rgb(0, 0, 0);
+}
+
+.cheatsheet-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
