@@ -17,3 +17,12 @@ body {
     object-fit: contain;
     aspect-ratio: 2;
   }
+
+.gif{
+  width: 300px;
+}
+
+.progress-images{
+  width: 300px;
+  padding: 20px;
+}

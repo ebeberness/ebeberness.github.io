@@ -1,52 +1,71 @@
 <html>
   <head>
-    <link rel="stylesheet" href="./MP0.css" />
+    <link rel="stylesheet" href="./MP1.css" />
   </head>
   <body>
-    <div class="MP0-container">
-      <h1>MP0</h1>
+    <div class="MP1-container">
+      <h1>MP1</h1>
       <h2>Overview</h2>
       <div class="Overview and Usage">
-        <p>
-        
-        </p>
+        <p> This pop-up extension allows users to keep track of their water intake throughout
+        the day. This was inspired by my personal terrible habit of never drinking water. 
+        The hope is that by checking off the boxes, working towards a specific goal of 60oz
+        of water a day, and playing with a fun rotating image, myself and others will be 
+        more motivated to drink water. </p>
         <img
-            class="picture"
-            src="/images/MP0.png"
+        class = "gif"
+        src = "/images/mp1.gif"
         >
     </div>
       <h2>Development Process</h2>
       <div class="issue">
         <p>
-       
+      For this pop-up I began by creating the pop-up box with the heading and other text regarding
+      the water goals. I then added the check boxes, originally to the right of the text, and then 
+      moved to them to the left of the text they correlated with. The text for each text box was 
+      organized by a different number of ounces so the user could see the accumulation of ounces. 
+      The ounces accumulate in 12oz segments. I 
+      also added a fun water image to the pop-up to make it a more fun interaction. This image was 
+      designed to spin if a user hovers over it. The image was also used for the icon associated with 
+      the extension. Lastly, I added a button that allowed users to clear all of the check boxes if they 
+      wanted to restart or completed their goal once already that day, and just wanted a quicker way to 
+      uncheck the boxes. 
+      <img class = "progress-images" src = "/images/mp1.stage1.png">
+      <img class = "progress-images" src = "/images/mp1.stage2.png">
+      <img class = "progress-images" src = "/images/mp1.stage3.png">
         </p>
     </div>
 
-      <h2>Issue Deep-Dive:</h2>
+      <h2>Issue Deep-Dive</h2>
       <div class="transition">
         <p>
-        For my CSS transition I had the title of my portfolio grow when a user hovers over it. This makes
-        the title stand out and makes hovering over the site more fun and interactive. I used the hover and 
-        grow commands in conjunction with the header class to make the transition work.
+        The first issue I ran into was getting the image to spin when a user hovered over it. I looked
+        up solutions on the internet but could not get the image to react. I tried using the cheatsheet 
+        code I had for enlarging images to see if this would be similar. Finally I asked a peer, Mackenzie,
+        how she was able to rotate images on her portfolio. I then discovered the issue was that I had not
+        defined the class for my image so using .picture would not associate with the image. 
         </p>
-        <img
-        class = "gif"
-        src = "/images/hover_affect_AdobeExpress.gif"
-        >
+        <p>
+        The second issue I ran into was clearing all of the checkboxes at once using the clear button. I again
+        started by searching for solutions online and found a couple that seemed as if they should have worked
+        but after playing with them for an hour I still could not get it to work. I gave up on the button, but 
+        decided to ask for help during class which allowed me to discover how to use Nodelists. From here I
+        I was able to figure out the solution to unchecking all of the boxes using the "clear" button.
+        </p>
       </div>
 
-      <h2>Ideas and Future Work:</h2>
+      <h2>Ideas and Future Work</h2>
       <ul class="ideas">
         <li> Being able to save which boxes had already been checked after a user click in and out of the pop-up </li>
-        <li> Choosing an overall color palette for the entire site </li>
-        <li> Adding more advance CSS transitions such as bouncing for fun titles on each page</li>
+        <li> Allowing the user to set their goal for how much water they want to drink</li>
+        <li> Making it even more aesthetically pleasing and adding more fun images</li>
       </ul>
 
-      <h2>Kudos:</h2>
+      <h2>Kudos</h2>
       <div class = "kudos">
-         <p> Mackenzie assisted with me with adding the rotation transformation on the image displayed on 
+         <p> My peer Mackenzie assisted with me with adding the rotation transformation on the image displayed on 
           my pop-up becuase she had learned how to do so in her MP0. </p>
       </div>
-      
+
   </body>
 </html>
