@@ -2,7 +2,7 @@ let song;
 let playing = false;
 
 function setup() {
-  song = loadSound('/sunshine.mp3');
+  song = loadSound('/MP2/sunshine.mp3');
   createCanvas(windowWidth, windowHeight);
   
 }
@@ -18,30 +18,26 @@ function mousePressed() {
 }
 
 function draw(){
-
-  if (playing) {
-  clear();
+  //clear();
   background(52, 168, 235);
+  
   fill("green")
-  ellipse(windowWidth/2.35,windowHeight/1.2, 100, 20);
-  ellipse(windowWidth/1.75,windowHeight/1.2, 100, 20);
+  ellipse(windowWidth/2.2,windowHeight/1.2, 100, 20);
+  ellipse(windowWidth/1.835,windowHeight/1.2, 100, 20);
   
   line(windowWidth/2, windowHeight/2, windowWidth/2,     windowHeight);
 
 
   fill("pink");
   
-  circle(windowWidth/2, windowHeight/2, 60);
-  const dim = Math.min(width, height);
+  const dim = Math.min(windowWidth, windowHeight);
   
   strokeJoin(ROUND);
   strokeWeight(dim * 0.01);
   stroke(255);
   
-  const time = millis() / 1000;
-  
+  const time = millis() / 500;
   const duration = 7;
-  
   const playhead = time / duration % 1;
 
   const rotation = playhead * PI * 2;
@@ -54,17 +50,20 @@ function draw(){
   push();
 
   translate(x, y);
-
+  if (playing) {
   rotate(rotation);
- 
+  }
   translate([CENTER]);
 
   for (let i = 0; i < 10; i ++) {
-    ellipse(0, 80, size/5, size/3);
+    ellipse(0, 80, size/5, size/3.5);
     rotate(PI/3);
   }
   
   pop();
-  }
+
+
+  circle(windowWidth/2, windowHeight/2, 60);
+  
 
 }

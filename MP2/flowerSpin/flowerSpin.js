@@ -15,11 +15,11 @@ function setup() {
   
     fill("pink");
     //translate (300,200);
-    circle(windowWidth/2, windowHeight/2, 60);
-    const dim = Math.min(width, height);
+    
+    const dim = Math.min(windowWidth, windowHeight);
     
     strokeJoin(ROUND);
-    strokeWeight(dim * 0.015);
+    strokeWeight(dim * 0.01);
     stroke(255);
     
     const time = millis() / 1000;
@@ -49,5 +49,7 @@ function setup() {
     }
     
     pop();
+
+    circle(windowWidth/2, windowHeight/2, 60);
   }
   
