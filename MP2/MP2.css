@@ -55,3 +55,8 @@ a:hover {
   filter: saturate(1);
 }
 
+.progress-images{
+  width: 600px;
+  padding: 20px;
+}
+

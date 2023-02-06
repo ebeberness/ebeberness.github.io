@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
     <link rel="stylesheet" href="./MP2.css" />
-    <title>sketches</title>
+    <title>Sketches</title>
   </head>
   <body>
-    <h1>sketching code</h1>
+    <div class="MP2-sketches">
+    <h1>MP2 Sketches and Write-Up</h1>
+    <h2>Overview</h2>
+        <div class="Overview and Usage">
+          <p> This project invovled creating six images and/or sounds that users could interact with. The goal was
+            to use p5.js techniques to create the sketches. I began by sketching flowers and smiley faces to inspire
+            each of the images. Then I created the sketches on p5.js before copying them to visual studio code. On visual 
+            studio code I was able to make adjustments to ensure everything worked properly on a the larger windows. Users
+            can interact with the last the second smiley face image by reloading the new page for a new smile, can watch a flower
+            bloom and close again by dragging their mouse to different parts of the screen, and can play music with the last two images
+            but starting and stopping the song with just a click of their mouse.</p>
     <div id="gallery">
       <a
         data-content="A Smile"
@@ -47,7 +57,67 @@
         href="dancingFlower/">
         <iframe src="dancingFlower/"></iframe>
       </a>
-
+    </div>
+      <div class="MP2-writeUp">
+      </div>
+        <h2>Development Process</h2>
+        <div class="issue">
+          <p>
+            This project invovled creating six images and/or sounds that users could interact with. 
+            The first is an image of a smiley face made up of a circle, rectangels, and an arc. 
+            The second is an image of a similar smiley face but the mouth changes into a different expression each time
+            the page reloads and the mouth is made up of different arc sizes. 
+            The third is a flower whose leaves spin continuously. The flower is made up of elipses and the 
+            rotation function is used to rotate the petals. The stem is a line, the middle has a circle, and the leaves 
+            are also ellipses.
+            The fourth image is interactive and allows a user to move their mouse to see the flower grow and shrink
+            as if it is blooming. The flower is made up of the same properties, ellipses for petals and leaves, cirlce 
+            for center of the flower, and line for the stem. MouseX and MouseY were used to create the mouse interaction.
+            The fifth is an interactive sound. The song "Walking on Sunshine" will play when the user clicks on the screen
+            and when they click the screen again it will stop. There is an image of a sun made up of the star function 
+            and a circle on the screen. The sound was imported using an MP3 copy of the song. 
+            The last image is the rotating flower made up of the same properties as before, but this time when the user 
+            clicks the screen the MP3 of "Walking on Sunshine" will play and the petals will spin. When the user clicks
+            the screen again and the music stops the petals also stop spinning.   </p>
+        <div>
+        <img class = "progress-images" src = "/images/flower.png">
+        <img class = "progress-images" src = "/images/smiley.png">
+      </div>
+      </div>
+  
+        <h2>Issue Deep-Dive</h2>
+        <div class="transition">
+          <p>
+          The first issue I ran into was figuring out how to get the flower to rotate. I was confused by how the 
+          rotate function could be used but after looking at more examples on p5.js and watching videos that were
+          linked in the project description I was able to solve the issue. I learned how I was supposed to use push() 
+          and pop() and where in the sequence rotate() should be placed.
+          </p>
+          <p>
+          The second issue I ran into was using the sound in my last two images. This was an easier fix as I realized on 
+          my walk home from class that I had simply routed to the song incorrectly and used the wrong path. Instead of 
+          sayinh /MP2/sunshine.mp3 I had left it at /sunshine.mp3.
+          </p>
+        </div>
+  
+        <h2>Ideas and Future Work</h2>
+        <ul class="ideas">
+          <li> Make the images of the flowers into full scenes including clouds and sunshines. </li>
+          <li> Figuring out how to spin the flower at the exact tempo of the music. </li>
+          <li> Making the smiley face into an image that could be translated together and appear on 
+            different parts of the screen.
+          </li>
+          <li> Ensure all of the images are more mobile friendly. </li>
+        </ul>
+  
+        <h2>Kudos</h2>
+        <div class = "kudos">
+           <p> The resources I used for this project included the entire p5.js references section and videos from 
+            coding train about mouseX and mouseY, rotating images, and randomizing different aspects of an image. 
+          
+          Kudos to Prerna for helping me download "Walking on Sunshine" in an mp3 format.</p>
+        </div>
+  
     </div>
   </body>
 </html>
