@@ -44,21 +44,16 @@ a {
   transition: 500ms;
 }
 
-a > iframe {
- 
-  border: none;
-  width: 100%;
-  height: 100%;
-  display: block;
+.cover-images{
   aspect-ratio: 1;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
 }
+
 
 a:hover {
   filter: saturate(4);
 }
 
-.progress-images{
-  width: 600px;
-  padding: 20px;
-}
 
