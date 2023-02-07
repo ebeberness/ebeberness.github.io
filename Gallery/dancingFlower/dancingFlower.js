@@ -1,6 +1,12 @@
 let song;
 let playing = false;
 
+rx = 50;
+ry = 50;
+rw = 50;
+rh = 50;
+
+
 function setup() {
   song = loadSound('/MP2/sunshine.mp3');
   createCanvas(windowWidth, windowHeight);
@@ -8,14 +14,18 @@ function setup() {
 }
 
 function mousePressed() {
+  if (mouseX > rx && mouseX < rx + rw && mouseY > ry && mouseY < ry+rh){
     if (song.isPlaying()) {
       song.stop();
       playing = false;
+      mouseOver(changeVolume);
     } else {
       song.play();
       playing = true;
     }
+  }  
 }
+
 
 function draw(){
   //clear();
@@ -50,6 +60,7 @@ function draw(){
   push();
 
   translate(x, y);
+  
   if (playing) {
   rotate(rotation);
   }
@@ -62,8 +73,10 @@ function draw(){
   
   pop();
 
-
   circle(windowWidth/2, windowHeight/2, 60);
   
+  //ellipse(mouseX, mouseY, 33, 33);}
+//fill ("");
+rect(rx, ry, rw, rh);
 
 }
