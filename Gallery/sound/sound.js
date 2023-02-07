@@ -11,7 +11,7 @@ function mousePressed() {
     background("#ffc0db");
   } else {
     song.play();
-    background("#ade6e6");
+    background("#FF69B4");
   }
 }
 

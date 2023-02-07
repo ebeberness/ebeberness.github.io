@@ -8,13 +8,13 @@ function setup() {
 }
 
 function mousePressed() {
-  if (song.isPlaying()) {
-    song.stop();
-    playing = false;
-  } else {
-    song.play();
-    playing = true;
-  }
+    if (song.isPlaying()) {
+      song.stop();
+      playing = false;
+    } else {
+      song.play();
+      playing = true;
+    }
 }
 
 function draw(){
@@ -25,7 +25,7 @@ function draw(){
   ellipse(windowWidth/2.2,windowHeight/1.2, 100, 20);
   ellipse(windowWidth/1.835,windowHeight/1.2, 100, 20);
   
-  line(windowWidth/2, windowHeight/2, windowWidth/2,     windowHeight);
+  line(windowWidth/2, windowHeight/2, windowWidth/2, windowHeight);
 
 
   fill("pink");
@@ -53,7 +53,7 @@ function draw(){
   if (playing) {
   rotate(rotation);
   }
-  translate([CENTER]);
+  //translate([CENTER]);
 
   for (let i = 0; i < 10; i ++) {
     ellipse(0, 80, size/5, size/3.5);
