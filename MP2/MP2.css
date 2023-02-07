@@ -1,64 +1,29 @@
-
-:root {
-  --background: rgb(0, 65, 83);
-  --foreground: white;
-
-  font-family: "Rubik", sans-serif;
-}
-
+html,
 body {
-  margin: 0;
-  padding: 1.5rem;
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: rgb(212, 244, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+  color: rgb(0, 0, 0);
 }
 
-#gallery {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+.MP0-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
 }
 
-[data-content]:before {
-  content: attr(data-content);
-  position: absolute;
-  bottom: 0;
-  background-color: var(--foreground);
-  text-decoration: none;
-  color: var(--background);
-  font-weight: 600;
-  padding: 0.4rem 0.7rem 0.3rem 0.7rem;
-  border-top-right-radius: 2rem;
-  z-index: 1;
-}
+.picture {
+    width: 600px;
+    border-radius: 5px;
+    object-fit: contain;
+    aspect-ratio: 2;
+  }
 
-a {
-  text-decoration: none;
-  position: relative;
-  background-color: var(--foreground);
-  outline: 1px solid var(--foreground);
-  outline-offset: -1px;
-  border-radius: 1rem;
-  overflow: hidden;
-  filter: saturate(1);
-  transition: 500ms;
-}
-
-a > iframe {
- 
-  border: none;
-  width: 100%;
-  height: 100%;
-  display: block;
-  aspect-ratio: 1;
-}
-
-a:hover {
-  filter: saturate(4);
+.gif{
+  width: 300px;
+  padding:20px;
 }
 
 .progress-images{
   width: 600px;
   padding: 20px;
 }
-

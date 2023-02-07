@@ -1,7 +1,7 @@
 let song;
 
 function setup() {
-  song = loadSound('/sunshine.mp3');
+  song = loadSound('/MP2/sunshine.mp3');
   createCanvas(windowWidth, windowHeight);
   background("#ffc0db");
 }
