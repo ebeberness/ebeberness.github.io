@@ -18,7 +18,6 @@ function mousePressed() {
     if (song.isPlaying()) {
       song.stop();
       playing = false;
-      mouseOver(changeVolume);
     } else {
       song.play();
       playing = true;
@@ -74,9 +73,14 @@ function draw(){
   pop();
 
   circle(windowWidth/2, windowHeight/2, 60);
-  
-  //ellipse(mouseX, mouseY, 33, 33);}
-//fill ("");
+ 
+if (playing){
+  fill("#FF69B4");
+}
+else {
+  fill("pink");
+}
+
 rect(rx, ry, rw, rh);
 
 }
