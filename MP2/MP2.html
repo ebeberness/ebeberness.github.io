@@ -13,28 +13,14 @@
     <h1>MP2 Write-Up</h1>
     <h2>Overview</h2>
         <div class="Overview and Usage">
-          <p> This project invovled creating six images and/or sounds that users could interact with. The goal was
-            to use p5.js techniques to create the sketches. I began by ideating with different design ideas including flowers and smiley faces to inspire
-            each of the images. Then I created the sketches on p5.js before copying them to visual studio code. On visual 
-            studio code I was able to make adjustments to ensure everything worked properly on a the larger windows. Users
-            can interact with the last the second smiley face image by reloading the new page for a new smile, can watch a flower
-            bloom and close again by dragging their mouse to different parts of the screen, and can play music with the last two images
-            but starting and stopping the song with just a click of their mouse. Checkout the gallery on my homepage to interact with each drawing.</p>
+          <p> This project involved creating a game using P5 and P5.play libraries. The game consists of a bumble bee trying to 
+            collect all of the flowers as if it is collecting the pollen from them. The user uses their trackpad to move their mouse
+            which controls the bumble bee. When they move their mouse over a flower it disappears and the user gains a point. If 
+            the user gets all 20 flowers before they fall past the bottom of the screen, the user wins. Otherwise the user will recieve
+            their score and can try again by reloading the page.</p>
             <img
             class = "gif"
-            src = "/images/spinning.gif"
-            >
-            <img
-            class = "gif"
-            src = "/images/growing.gif"
-            >
-            <img
-            class = "gif"
-            src = "/images/smile.gif"
-            >
-            <img
-            class = "gif"
-            src = "/images/flowerSound2.gif"
+            src = "/images/game.gif"
             >
           
       <div class="MP2-writeUp">
@@ -42,74 +28,47 @@
         <h2>Development Process</h2>
         <div class="issue">
           <p>
-            This project invovled creating six images and/or sounds that users could interact with. 
-            <li> 
-             Static Sketch: A smiley face made up of a circle, rectangels, and an arc. 
-            </li>
-            
-            <li>Random Sketch: A similar smiley face but the mouth changes into a different expression each time
-            the page reloads and the mouth is made up of different arc sizes. </li>
-            
-            <li>Loop Sketch: A flower whose leaves spin continuously. The flower is made up of elipses and the 
-            rotation function is used to rotate the petals. The stem is a line, the middle has a circle, and the leaves 
-            are also ellipses.</li>
-            
-            <li>Interactive Sketch: An interactive sketch  of a flower that allows a user to move their mouse to see the flower grow and shrink
-            as if it is blooming. The flower is made up of the same properties, ellipses for petals and leaves, cirlce 
-            for center of the flower, and line for the stem. MouseX and MouseY were used to create the mouse interaction.</li>
-           
-            <li>Audio Sketch: The song "Walking on Sunshine" will play when the user clicks on the screen
-            and when they click the screen again it will stop. The sound was imported using an MP3 copy of the song. There is an image of a sun made up of the star function 
-            and a circle on the screen.  </li>
-            
-            <li>Audio and Visuals Sketch: A user can make a flower rotate to the song "Walking on Sunshine" by clicking on the pink box in the top left corner of the screen.
-              When the music starts the flower spins and to stop the music and flower simultaneously the user can press the pink box again. The user can see they have pressed
-              the button because it will turn hot pink when the song is playing and back to light pink when the song is stopped.
-              The rotating flower  is made up of the same properties as previous sketches and the sound in an uploaded MP3 audio file.
-           </li>
-
+            Creating this game I began using p5 online to design the base of the game which allowed me to remove falling blocks
+            when the user dragged their mouse, along with a pink box, onto each of the objects. From here I took the code into visual 
+            studio and loaded the images to use as sprites rather than blocks. I created the flower image in adobe and found the bee image
+            online using stock free images. Once the images were preloaded I created a sprite that was the bee and a group for the flower 
+            sprites. I then scaled the images of the bee and the flowers to better fit the game. Next I added end game text. When the flower group
+            was completely removed by the player a winning message appears and if a user is unable to collect all 20 flowers, a losing message 
+            will appear as well as the users score. Every time a user removes a flower, the score number on the screen and the score variable increase
+            by one. To restart the game the user must reload their browser screen.
             </p>
         <div>
         <img class = "progress-images" src = "/images/flower.png">
-        <img class = "progress-images" src = "/images/smiley.png">
       </div>
       </div>
   
         <h2>Issue Deep-Dive</h2>
         <div class="transition">
           <p>
-          The first issue I ran into was figuring out how to get the flower to rotate. I was confused by how the 
-          rotate function could be used but after looking at more examples on p5.js and watching videos that were
-          linked in the project description I was able to solve the issue. I learned how I was supposed to use push() 
-          and pop() and where in the sequence rotate() should be placed.
+          The first issue I ran into was figuring out how to bring the code into visual studio code....
           </p>
           <p>
-          The second issue I ran into was using the sound in my last two images. This was an easier fix as I realized on 
-          my walk home from class that I had simply routed to the song incorrectly and used the wrong path. Instead of 
-          saying /MP2/sunshine.mp3 I had left it at /sunshine.mp3.
+            The second issue I ran into was scaling the images without messing up the size of the Sprite....
+            </p>
+          <p>
+          The last issue I ran into was figuring out how to add a trigger for when the user lost the game....
           </p>
-          <p> The last issue I ran into was fitting the images of each of my sketches into the containers on the gallery page.
-            Since I used windowHeight and windowWidth to adjust the eyes for my smiley face sketches, they became distorted when trying
-            to use iFrame. I deteremined it was better to use images and gifs after spending time trying to alter the sketches.
-          </p>
+            
+          
         </div>
   
         <h2>Ideas and Future Work</h2>
         <ul class="ideas">
-          <li> Make the images of the flowers into full scenes including clouds and sunshines. </li>
-          <li> Figuring out how to spin the flower at the exact tempo of the music. </li>
-          <li> Making the smiley face into an image that could be translated together and appear on 
-            different parts of the screen.
+          <li> Add different colored flowers to make the game more aesthetically pleasing. </li>
+          <li> Add different levels and speeds to the game/how the flowers fall.
           </li>
-          <li> Ensure all of the images are more mobile friendly. </li>
+          <li> Figure out how to make the game mobile friendly. </li>
         </ul>
   
         <h2>Kudos</h2>
         <div class = "kudos">
-           <p> The resources I used for this project included the entire p5.js references section and videos from 
-            coding train about mouseX and mouseY, rotating images, and randomizing different aspects of an image. 
-          
-          Kudos to Prerna for helping me download "Walking on Sunshine" in an mp3 format.</p>
+           <p> Kudos to the p5.play resources and the p5 online preview tool. 
+          </p>
         </div>
   
     </div>
