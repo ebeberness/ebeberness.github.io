@@ -19,10 +19,11 @@ body {
   }
 
 .gif{
-  width: 300px;
+  width: 600px;
+  padding: 20px;
 }
 
 .progress-images{
-  width: 300px;
+  width: 400px;
   padding: 20px;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="./MP3.css" />
+    <title>Sketches</title>
+  </head>
+  <body>
+    <div class="MP3-writeUp">
+    <h1>MP2 Write-Up</h1>
+    <div>
+    <h2>Overview</h2>
+        <div class="Overview and Usage">
+          <p> This project involved creating a game using P5 and P5.play libraries. The game consists of a bumble bee trying to 
+            collect all of the flowers as if it is collecting the pollen from them. The user uses their trackpad to move their mouse
+            which controls the bumble bee. When they move their mouse over a flower it disappears and the user gains a point. If 
+            the user gets all 20 flowers before they fall past the bottom of the screen, the user wins. Otherwise the user will recieve
+            their score and can try again by reloading the page.</p>
+            
+            <img
+            class = "gif"
+            src = "/images/gamelose.gif"
+            >
+            <img
+            class = "gif"
+            src = "/images/gamewin.gif"
+            >
+          
+          </div>
+      
+        <h2>Development Process</h2>
+        <div class="issue">
+          <p>
+            Creating this game I began using p5 online to design the base of the game which allowed me to remove falling blocks
+            when the user dragged their mouse, along with a pink box, onto each of the objects. From here I took the code into visual 
+            studio and loaded the images to use as sprites rather than blocks. I created the flower image in adobe and found the bee image
+            online using stock free images. Once the images were preloaded I created a sprite that was the bee and a group for the flower 
+            sprites. I then scaled the images of the bee and the flowers to better fit the game. Next I added end game text. When the flower group
+            was completely removed by the player a winning message appears. If a user is unable to collect all 30 flowers, a losing message is triggered
+            by a flower overlapping the bottom of the users screen. The screen changes colors and a message will appear as with the users score.
+            Every time a user removes a flower, the score number on the screen and the score variable increase
+            by one. To restart the game the user must reload their browser screen.
+            </p>
+        <div>
+        <img class = "progress-images" src = "/images/p5.play.png">
+        <img class = "progress-images" src = "/images/gameprogress.gif">
+        <img class = "progress-images" src = "/images/endgame.png">
+      </div>
+      </div>
+  
+        <h2>Issue Deep-Dive</h2>
+        <div class="transition">
+          <p>
+          The first issue I ran into was figuring out how to bring the code into visual studio code. This ended up being a simple fix
+          because many other people in the class were running into a similar issue and all I had to do was correctly input 
+          the script for p5.play. 
+          </p>
+          <p>
+            The second issue I ran into was scaling the images without messing up the size of the Sprite and the action of the bee colliding with the flowers.
+            By going to office hours I was 
+            able to discover that I only had to move "add.image" commands to be before any scaling. Then I was able to use bee.scale and flower.scale to adjust 
+            images.
+            </p>
+          <p>
+          The last issue I ran into was figuring out how to add a trigger for when the user lost the game. I researched how to do this on a dozen sites and watched
+          many examples. I eventually figured out how to add a static Sprite and if the flowers collided with this sprite it would trigger a screen change. The screen change
+          was a sperate function and lead to an end screen where the users were given a message about losing and their score. The static sprite is placed right outside of the 
+          window height and is the window width. 
+          </p>
+            
+          
+        </div>
+  
+        <h2>Ideas and Future Work</h2>
+        <ul class="ideas">
+          <li> Add different colored flowers to make the game more aesthetically pleasing. </li>
+          <li> Add different levels and speeds to the game to make it more challenging and fun.
+          </li>
+          <li> Figure out how to make the game mobile friendly. </li>
+          <li> Add a beginning page and allow users to click screen to start and restart the game rather than reloading the page.</li>
+        </ul>
+  
+        <h2>Kudos</h2>
+        <div class = "kudos">
+           <p> Kudos to the p5.play resources and the p5 online preview tool. I used examples including https://editor.p5js.org/ehersh/sketches/Hk52gNXR7, https://creative-coding.decontextualize.com/making-games-with-p5-play/, and https://editor.p5js.org/lberdugo/sketches/ByrfGlY0b
+            to become familiar with the tools in this game.
+          </p>
+        </div>
+  
+    </div>
+  </body>
+</html>
