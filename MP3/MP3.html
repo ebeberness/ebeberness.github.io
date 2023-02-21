@@ -17,7 +17,7 @@
           <p> This project involved creating a game using P5 and P5.play libraries. The game consists of a bumble bee trying to 
             collect all of the flowers as if it is collecting the pollen from them. The user uses their trackpad to move their mouse
             which controls the bumble bee. When they move their mouse over a flower it disappears and the user gains a point. If 
-            the user gets all 20 flowers before they fall past the bottom of the screen, the user wins. Otherwise the user will recieve
+            the user gets all 30 flowers before they fall past the bottom of the screen, the user wins. Otherwise the user will lose but recieves
             their score and can try again by reloading the page. Play the game by visting https://ebeberness.github.io/beegame/.</p>
             
             <img
@@ -34,14 +34,14 @@
         <h2>Development Process</h2>
         <div class="issue">
           <p>
-            Creating this game I began using p5 online to design the base of the game which allowed me to remove falling blocks
-            when the user dragged their mouse, along with a pink box, onto each of the objects. From here I took the code into visual 
-            studio and loaded the images to use as sprites rather than blocks. I created the flower image in adobe and found the bee image
+           When creating this game I began using the p5 preview online to design the base of the game which allowed me to remove falling blocks
+            when the user dragged their mouse, which controlled a pink box, onto each of the objects. From here I took the code into Visual 
+            Studio Code and loaded the images to use as sprites rather than blocks. I created the flower image in adobe and found the bee image
             online using stock free images. Once the images were preloaded I created a sprite that was the bee and a group for the flower 
-            sprites. I then scaled the images of the bee and the flowers to better fit the game. Next I added end game text. When the flower group
-            was completely removed by the player a winning message appears. If a user is unable to collect all 30 flowers, a losing message is triggered
-            by a flower overlapping the bottom of the users screen. The screen changes colors and a message will appear as with the users score.
-            Every time a user removes a flower, the score number on the screen and the score variable increase
+            sprites. I then scaled the images of the bee and the flowers to better fit the game. Next I added end game text. If the flower group
+            is completely removed by the player a winning message appears. If a user is unable to collect all 30 flowers, a losing message is triggered
+            by a flower overlapping the bottom of the users screen. The screen changes colors and a message will appear along with the users score.
+            Every time a user removes a flower, the score number on the screen and the score variable increases
             by one. To restart the game the user must reload their browser screen.
             </p>
         <div>
@@ -65,7 +65,7 @@
             images.
             </p>
           <p>
-          The last issue I ran into was figuring out how to add a trigger for when the user lost the game. I researched how to do this on a dozen sites and watched
+          The third issue I ran into was figuring out how to add a trigger for when the user lost the game. I researched how to do this on a dozen sites and watched
           many examples. I eventually figured out how to add a static Sprite and if the flowers collided with this sprite it would trigger a screen change. The screen change
           was a sperate function and lead to an end screen where the users were given a message about losing and their score. The static sprite is placed right outside of the 
           window height and is the window width. 
