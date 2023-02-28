@@ -9,19 +9,20 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 5rem;
+  display: flex;
 }
 
-.picture {
+/* .picture {
     width: 600px;
     border-radius: 5px;
     object-fit: contain;
     aspect-ratio: 2;
     display: flexbox;
     flex-wrap: auto;
-  }
+  } */
 
 .gif{
-  width: 600px;
+  width: 400px;
   padding: 20px;
   display: flexbox;
   flex-wrap: auto;
@@ -31,5 +32,5 @@ body {
   width: 400px;
   padding: 20px;
   display: flexbox;
-  flex-wrap: auto;
+  flex-wrap: wrap;
 }
