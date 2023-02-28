@@ -16,14 +16,20 @@ body {
     border-radius: 5px;
     object-fit: contain;
     aspect-ratio: 2;
+    display: flexbox;
+    flex-wrap: auto;
   }
 
 .gif{
   width: 300px;
   padding:20px;
+  display: flexbox;
+  flex-wrap: auto;
 }
 
 .progress-images{
   width: 600px;
   padding: 20px;
+  display: flexbox;
+  flex-wrap: auto;
 }
