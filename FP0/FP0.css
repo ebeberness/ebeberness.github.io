@@ -1,0 +1,6 @@
+.picture {
+    width: 400px;
+    border-radius: 5px;
+    object-fit: contain;
+    aspect-ratio: 2;
+  }
