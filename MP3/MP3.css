@@ -16,9 +16,13 @@ body {
 .gif{
   width: 400px;
   padding: 20px;
+  display: flexbox;
+  flex-wrap: auto;
 }
 
 .progress-images{
   width: 400px;
   padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
 }
