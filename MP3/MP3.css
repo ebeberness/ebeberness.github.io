@@ -5,32 +5,20 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.MP0-container {
+.MP3-container {
   width: 80%;
   margin: auto;
   margin-top: 5rem;
-  display: flex;
+  display: flexbox;
+  flex-wrap: auto;
 }
-
-/* .picture {
-    width: 600px;
-    border-radius: 5px;
-    object-fit: contain;
-    aspect-ratio: 2;
-    display: flexbox;
-    flex-wrap: auto;
-  } */
 
 .gif{
   width: 400px;
   padding: 20px;
-  display: flexbox;
-  flex-wrap: auto;
 }
 
 .progress-images{
   width: 400px;
   padding: 20px;
-  display: flexbox;
-  flex-wrap: wrap;
 }
