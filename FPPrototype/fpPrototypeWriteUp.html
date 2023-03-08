@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./fpPrototypeWriteUp.css" />
+  </head>
+  <body>
+    <div class="FP0-container">
+      <h1>FP Prototype</h1>
+
+<h4>Description of Project</h4>
+This project is a prototype for creating a drawing board. The current version allows users to draw images with a pen tool and save or clear the canvas drawing board.
+
+<h4>Overview and Usage</h4>
+  The core functionality of this project is to allow users to draw whatever they would like. Since this is the prototype users can currently only draw with lines as 
+  if they are using a pen. The user can also clear the canvas by hitting the clear button and restart their drawing and can change the color of the canvas background using the slider
+  in the top left corner of the device. To save the canvas the user hits the save button and it will
+  download the canvas to their device. In the final prototype the user will be able to use different pen shapes. Check out the art board on the home page of my porfolio to play with the project. 
+
+  <p> <img
+    class = "gif"
+    src = "/images/prototype.gif"
+    alt = "gif of final project prototype"> </p>
+
+<h4>Development Process</h4> 
+For the prototype I began by creating the canvas and implementing a drawLines function that would allow the user to draw on the canvas when their mouse is pressed. I then added the slider bar
+that would change the background color. Next I created a save button and added the command that would download the canvas when the button was clicked. Lastly I created a function to clear and lines that were currently drawn on the screen. This was done by resetting the array that 
+stored the lines that were drawn. Next I will work towards adding different drawing tools and a button for the changing between drawing with a line and the other tools for the final prototype. I also hope to be able to change pen color in the final version.
+
+<p>
+<img class="progress-images" src = "/images/protImg1.png" alt = "progress image of the drawing board with no buttons">
+<img class="progress-images" src = "/images/progImg2.png" alt = "progress image of the drawing board with buttons">
+</p>
+
+<h4>Issue Deep-Dive</h4>
+An issue I ran into was being able to draw on the screen again once I cleared the screen. I realized I needed to reset the lines array in order to clear the canvas rather than trying to cover the
+canvas with a new shape. I also had to reset the clear button so that it would not continunously clear the canvas.
+
+<h4>Ideas and Future Work</h4>
+ <li>Allow user to change the color of their pen</li>
+ <li>Having buttons that change the tool used for drawing (i.e. draws with circles or stars rather than lines)</li>
+ <li>Adding more colors to the background slider</li>
+    
+ <h4>Kudos</h4> 
+Kudos to the p5 resources for help with the slider and the example given in discord for implementing the drawing fucntion. I used this example as inspiration and 
+tweaked the lines to be continuous rather than start and end points.
+
+
+<h4>Project scope </h4> 
+My project scope remains similar. Instead of adding images the user clicks on to change brushes I am considering remaining with just using buttons with text. I still 
+plan to add the different brushes and have not changed the cursor to actually look like a brush so I will have to figure this for the final product instead of for the prototype as 
+I had originally planned. I implemented the clear and save buttons early which will make the remaining milestones potentially more brief. 
+
+
+<h4>Time management</h4> 
+In regards to time management, I have spent the time I carved out for the project on it so far. I have worked on it in class as well as hours outside of class and have run into some roadblocks
+that have currently been resovled. I am sure to run into more road blocks but plan to complete the prototype early in order to have time for any last minute setbacks.
+
+
+<h4>Implementation plan</h4> 
+My implementation plan has not changed as I have remained on track with the timeline I worked out for the project and have completed this first milestone with a couple further steps 
+completed as well.
+
+
+</div>
+</body>
+</html>
+
