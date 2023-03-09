@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(212, 244, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    color: rgb(0, 0, 0);
+  }
+  
+
+  .FP0-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flexbox;
+    flex-wrap: auto;
+  }
+  
+  .gif{
+    width: 400px;
+    padding: 20px;
+    display: flexbox;
+    flex-wrap: auto;
+  }
+  
+  .progress-images{
+    width: 400px;
+    padding: 20px;
+    display: flexbox;
+    flex-wrap: wrap;
+  }

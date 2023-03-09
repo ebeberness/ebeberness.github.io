@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./fpFinal.css" />
+  </head>
+  <body>
+    <div class="FP-container">
+      <h1>Final Project - Art Board</h1>
+
+<h4>Description of Project</h4>
+<p>This project is a drawing board board for users to create and save art. The final version allows users to draw images with a pen tool, with cirlces, and with stars using their mouse.
+  Users are able to change the background of their drawing board using the slider and change the color of their drawing to either black or white to better contrast with whatever background they
+  choose. When users have completed their drawing they can save or clear the canvas drawing board.</p>
+
+<h4>Overview and Usage</h4>
+  <p>The core functionality of this project is to allow users to draw whatever they would like on a canvas. The user can slide the slider in the top right 
+    of the canvas to change the color of their background to dramatic bright colors. The user can click on the various buttons, choosing between the "lines", "circles", and "stars" buttons, 
+    to be able to create different shapes. The user can switch between drawing shapes while they actively working on a piece of art. The user can then click the "black" or "white" buttons
+    to change the fill/stroke of their shapes. Lastly the user can save the canvas to their device by pressing the "save" button or clear their canvas completely by hitting the "clear" button.
+    Create your own art on the drawing board at the link below!</p>
+ 
+ <a href = "https://ebeberness.github.io/finalProject/" alt = "link to final project art board" >Art Board</a>
+  
+  <p> <img
+    class = "gif"
+    src = "/images/final.gif"
+    alt = "gif of final project prototype"> </p>
+
+<h4>Development Process</h4> 
+<p> I began the development process from the prototype phase which included the save button, clear button, and background slider already working. It also included the ability to draw with a pen.
+  From here I changed the different colors the background could change to, in order to make the colors more dramatic and vibrant. I then tackled adding buttons to change the pen type. I began by adding
+  a button for drawing with a line so that a user would have to click the button before they began drawing. I then added circle and star buttons that would allow a user to draw with circles and stars and 
+  allow them to switch between all of the pen types. Lastly, I added the "black" and "white" buttons so that the user could change the fill and stroke of their drawings. This was implemented to increase visual 
+  accessibility when a user wanted to have a different background but still have contrasting pen color. Users can switch between shape types and colors as much as they want and then save or clear their canvas. The save button will 
+ save their current version of what is on the canvas.
+</p>
+<p>
+<img class="progress-images" src = "/images/finalp1.png" alt = "final project image of the drawing board in prototype phase">
+<img class="progress-images" src = "/images/finalp2.png" alt = "final project image of the drawing board on p5 before bringing to VSC">
+</p>
+
+<h4>Issue Deep-Dive</h4>
+<li> An issue I ran into was being able to draw circles and stars without continuing to draw each of the shapes on top of each other as well. I learned that I had to put the loops for adding the shapes
+  to arrays within the draw function instead of within the individual shape functions. After doing this, the arrays saved all of the already drawn shapes but did not continue drawing the wrong shapes 
+  when a specific one was selected.
+</li>
+<li> The second main issue I ran into was changing the color of the shape when it was on the drawing board. The black and white function buttons worked for circles and stars but not for <lines class=""></lines></li>
+
+<h4>Ideas and Future Work</h4>
+ <li>Allow user to choose any color they want to fill the shapes.</li>
+ <li>Allow users to change the color for specific parts of their drawing instead of the entire drawing at once.</li>
+ <li>To add more shape options and also varying sizes of shapes such as different thicknesses of lines or different size cirlces.</li>
+    
+ <h4>Kudos</h4> 
+<p>Kudos to the p5 resources for help with changing backgrounds and drawing circles. Also thank you Hannah for answering so many questions during class!</p>
+
+
+
+
+</div>
+</body>
+</html>
+
