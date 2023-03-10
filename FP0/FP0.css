@@ -3,10 +3,33 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
     color: rgb(0, 0, 0);
   }
-  
+
+  .FP0-container{
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flexbox;
+  flex-wrap: auto;
+}
+
 .picture {
-    width: 400px;
+    width: 200px;
     border-radius: 5px;
     object-fit: contain;
     aspect-ratio: 2;
   }
+
+.gif{
+  width: 400px;
+  padding:20px;
+  display: flexbox;
+  flex-wrap: auto;
+}
+
+.progress-images{
+  width: 400px;
+  padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
+}
+

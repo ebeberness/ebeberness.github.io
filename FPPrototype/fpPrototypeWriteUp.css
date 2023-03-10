@@ -4,25 +4,31 @@ body {
     color: rgb(0, 0, 0);
   }
   
+.f.FPProp-container{
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flexbox;
+  flex-wrap: auto;
+}
 
-  .FP0-container {
-    width: 80%;
-    margin: auto;
-    margin-top: 5rem;
-    display: flexbox;
-    flex-wrap: auto;
+.picture {
+    width: 200px;
+    border-radius: 5px;
+    object-fit: contain;
+    aspect-ratio: 2;
   }
-  
-  .gif{
-    width: 400px;
-    padding: 20px;
-    display: flexbox;
-    flex-wrap: auto;
-  }
-  
-  .progress-images{
-    width: 400px;
-    padding: 20px;
-    display: flexbox;
-    flex-wrap: wrap;
-  }
+
+.gif{
+  width: 400px;
+  padding:20px;
+  display: flexbox;
+  flex-wrap: auto;
+}
+
+.progress-images{
+  width: 400px;
+  padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
+}

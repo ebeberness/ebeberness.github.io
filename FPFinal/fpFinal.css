@@ -5,24 +5,31 @@ body {
   }
   
 
-  .FP0-container {
+  .FP-container {
     width: 80%;
-    margin: auto;
-    margin-top: 5rem;
-    display: flexbox;
-    flex-wrap: auto;
+  margin: auto;
+  margin-top: 5rem;
+  display: flexbox;
+  flex-wrap: auto;
+}
+
+.picture {
+    width: 200px;
+    border-radius: 5px;
+    object-fit: contain;
+    aspect-ratio: 2;
   }
-  
-  .gif{
-    width: 400px;
-    padding: 20px;
-    display: flexbox;
-    flex-wrap: auto;
-  }
-  
-  .progress-images{
-    width: 400px;
-    padding: 20px;
-    display: flexbox;
-    flex-wrap: wrap;
-  }
+
+.gif{
+  width: 400px;
+  padding:20px;
+  display: flexbox;
+  flex-wrap: auto;
+}
+
+.progress-images{
+  width: 400px;
+  padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
+}
