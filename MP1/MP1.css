@@ -5,7 +5,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.MP1-container {
+.MP1-container { 
   width: 80%;
   margin: auto;
   margin-top: 5rem;
@@ -14,18 +14,22 @@ body {
 }
 
 .picture {
-    width: 600px;
+    width: 200px;
     border-radius: 5px;
     object-fit: contain;
     aspect-ratio: 2;
   }
 
 .gif{
-  width: 300px;
-  display: flex;
+  width: 400px;
+  padding:20px;
+  display: flexbox;
+  flex-wrap: auto;
 }
 
 .progress-images{
-  width: 300px;
+  width: 400px;
   padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
 }
