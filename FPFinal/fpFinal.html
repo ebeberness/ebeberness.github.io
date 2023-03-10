@@ -47,7 +47,9 @@
   to arrays within the wdraw function instead of within the individual shape functions. After doing this, the arrays saved all of the already drawn shapes but did not continue drawing the wrong shapes 
   when a specific one was selected.
 </li>
-<li> The second main issue I ran into was changing the color of the shape when it was on the drawing board. The black and white function buttons worked for circles and stars but not for <lines class=""></lines></li>
+<li> The second main issue I ran into was changing the color of the shape when it was on the drawing board. The black and white function buttons worked for circles and stars but not for line drawing. I fixed this by
+  adding in a change to the stroke in my "fillBlack" and "fillWhite" functions since the line cannot fill, it needs to change stroke color.
+</li>
 
 <h4>Ideas and Future Work</h4>
  <li>Allow user to choose any color they want to fill the shapes.</li>
