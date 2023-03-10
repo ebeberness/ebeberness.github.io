@@ -1,17 +1,17 @@
 .picture {
-    width: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-    aspect-ratio: 1;
-  }
+  width: 400px;
+  padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
+}
   
   .bio-container {
-    display: flex;
     width: 80%;
-    margin: auto;
-    margin-top: 5rem;
-    gap: 12px;
-  }
+  margin: auto;
+  margin-top: 5rem;
+  display: flexbox;
+  flex-wrap: auto;
+}
   
   body {
     background-color: rgb(212, 244, 255);

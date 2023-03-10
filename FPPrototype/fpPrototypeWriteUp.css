@@ -12,13 +12,6 @@ body {
   flex-wrap: auto;
 }
 
-.picture {
-    width: 200px;
-    border-radius: 5px;
-    object-fit: contain;
-    aspect-ratio: 2;
-  }
-
 .gif{
   width: 400px;
   padding:20px;
