@@ -9,8 +9,16 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 5rem;
+  display: flexbox;
+  flex-wrap: auto;
 }
 
 .img {
-  width: 50 px;
+  width: 400px;
+  padding: 20px;
+  display: flexbox;
+  flex-wrap: wrap;
 }
+
+
+
