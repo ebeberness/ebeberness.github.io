@@ -25,5 +25,5 @@ body {
   width: 400px;
   padding: 20px;
   display: flexbox;
-  flex-wrap: wrap;
+  flex-wrap: auto;
 }
