@@ -5,13 +5,14 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.MP2-sketches {
+.MP2-sketches { 
   width: 80%;
   margin: auto;
   margin-top: 5rem;
   display: flexbox;
   flex-wrap: auto;
 }
+
 
 .gif{
   width: 400px;
